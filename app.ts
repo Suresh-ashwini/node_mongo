@@ -1,11 +1,14 @@
 const express = require("express");
-const bodyParser = require('body-parser');
+const bodyParser = require("body-parser");
 const app = express(); // instantiate express
 app.use(bodyParser.json());
-const path = require('path'); 
+const path = require("path");
+const db = require("./connect");
 
-const db = require('./connect');
-
+const port = process.env.port || 3000;
+app.listen(port, () => {
+  console.log("server started");
+});
 
 // os method examples
 // const os = require('os');
@@ -22,14 +25,7 @@ const db = require('./connect');
 
 // })
 // emitter.emit('message from emitter')
-
-const port = process.env.port || 3000;
-app.listen(port, () => {
-  console.log('server started');
-
-})
-
-//-----------------------new try---------------
+// -----------------------new try---------------
 // const express = require("express");
 // const server = express();
 
@@ -50,4 +46,3 @@ app.listen(port, () => {
 // server.listen(port, () => {
 //   console.log(`Server listening at ${port}`);
 // });
-
