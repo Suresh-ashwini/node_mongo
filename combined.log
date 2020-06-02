@@ -1,0 +1,26 @@
+info: 1--informational
+warn: 2--- warning
+error: 3---error
+info: 4 *** informational
+warn: 5 *** warning
+error: 6 *** error
+{"level":"info","message":"1--informational"}
+{"level":"warn","message":"2--- warning"}
+{"level":"error","message":"3---error"}
+{"message":"4 *** informational","level":"info"}
+{"message":"5 *** warning","level":"warn"}
+{"message":"6 *** error","level":"error"}
+{"level":"info","message":"Connected to 8909"}
+{"level":"info","message":"1--informational"}
+{"level":"warn","message":"2--- warning"}
+{"level":"error","message":"3---error"}
+{"message":"4 *** informational","level":"info"}
+{"message":"5 *** warning","level":"warn"}
+{"message":"6 *** error","level":"error"}
+{"level":"info","message":"Connected to 8909"}
+{"level":"info","message":"1--informational"}
+{"level":"warn","message":"2--- warning"}
+{"level":"error","message":"3---error"}
+{"message":"4 *** informational","level":"info"}
+{"message":"5 *** warning","level":"warn"}
+{"message":"6 *** error","level":"error"}
