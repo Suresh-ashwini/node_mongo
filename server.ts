@@ -5,12 +5,10 @@ const PORT = process.env.LISTEN_PORT || 3000;
 const app = new App().app;
 const server = app.listen(PORT, () => {
   Logger.log("info", "Connected to " + PORT);
-  Logger.log("info", "1--informational");
-  Logger.log("warn", "2--- warning");
-  Logger.log("error", "3---error");
-  Logger.info("4 *** informational");
-  Logger.warn("5 *** warning");
-  Logger.error("6 *** error");
+  Logger.error("0 *** error");
+  Logger.warn("1 *** warning");
+  Logger.info("2 *** informational");
+  Logger.log({ private: true, level: "error", message: "This log is private" });
 });
 
 export default server;
