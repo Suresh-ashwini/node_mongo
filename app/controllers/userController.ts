@@ -1,42 +1,66 @@
 import { UserService } from "../services/UserService";
 import User from "../models/user";
 import mongoose from "mongoose";
+import { AppResponse } from "../services/app-responses";
 
 export class UserController {
   public userService: UserService = new UserService();
+  public response: AppResponse = new AppResponse();
 
   public getAllUsers = async (req, res, next) => {
-    const getAllUsers = await this.userService.getAllUsers();
-    return res.status(200).json(getAllUsers);
+    try {
+      const getAllUsers = await this.userService.getAllUsers();
+      return this.response.successOk(res, "", getAllUsers);
+    } catch (error) {
+      return this.response.errorOnServer(res, "Internal Server Error", error);
+    }
   };
 
   public createUser = async (req, res, next) => {
-    const userObject = new User({
-      _id: new mongoose.Types.ObjectId(),
-      name: req.body.name,
-      age: req.body.age,
-    });
-    const createdUser = await this.userService.createNewUser(userObject);
-    return res
-      .status(201)
-      .json({ message: "Post handled", newUser: createdUser });
+    try {
+      const userObject = new User({
+        _id: new mongoose.Types.ObjectId(),
+        name: req.body.name,
+        age: req.body.age,
+      });
+      const createdUser = await this.userService.createNewUser(userObject);
+      return this.response.successOnCreate(
+        res,
+        "New User Created Succesfully",
+        createdUser
+      );
+    } catch (error) {
+      return this.response.errorOnServer(res, "Internal Server Error", error);
+    }
   };
 
   public getUserById = async (req, res, next) => {
-    const id = req.params.id;
-    const userFound = await this.userService.getUserFoundById(id);
-    return res.status(200).json(userFound);
+    try {
+      const id = req.params.id;
+      const userFound = await this.userService.getUserFoundById(id);
+      return this.response.successOk(res, "User Found", userFound);
+    } catch (error) {
+      return this.response.errorOnServer(res, "Internal Server Error", error);
+    }
   };
 
   public updateUser = async (req, res, next) => {
-    const id = req.params.id;
-    const updateUser = await this.userService.updateUserFields(id, req.body);
-    return await res.status(200).json(updateUser);
+    try {
+      const id = req.params.id;
+      const updateUser = await this.userService.updateUserFields(id, req.body);
+      return this.response.successOk(res, "User Updated", updateUser);
+    } catch (error) {
+      return this.response.errorOnServer(res, "Internal Server Error", error);
+    }
   };
 
   public deleteUser = async (req, res, next) => {
-    const id = req.params.id;
-    const deleteUser = await this.userService.deleteUserById(id);
-    return res.status(200).json({ message: "User Deleted", body: deleteUser });
+    try {
+      const id = req.params.id;
+      const deleteUser = await this.userService.deleteUserById(id);
+      return this.response.successOk(res, "User Deleted", deleteUser);
+    } catch (error) {
+      return this.response.errorOnServer(res, "Internal Server Error", error);
+    }
   };
 }

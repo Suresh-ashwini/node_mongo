@@ -7,7 +7,7 @@ node_modules/
 /out-tsc
 
 #console file
-/combined.log
+**/*combined.log
 
 # profiling files
 chrome-profiler-events.json
