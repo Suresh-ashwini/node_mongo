@@ -1,10 +1,10 @@
 import mongoose, { Schema } from "mongoose";
 
 const userSchema: Schema = new Schema({
-  _id: mongoose.Types.ObjectId,
   name: {
     type: String,
     required: true,
+    unique: true,
   },
   age: Number,
 });

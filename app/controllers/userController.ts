@@ -1,66 +1,89 @@
 import { UserService } from "../services/UserService";
-import User from "../models/user";
-import mongoose from "mongoose";
 import { AppResponse } from "../services/app-responses";
+import Logger from "../config/logger";
+import ServiceError from "../errors/ServiceError";
+import { Request, NextFunction } from "express";
+import RepositoryError from "../errors/RepositoryError";
 
 export class UserController {
   public userService: UserService = new UserService();
   public response: AppResponse = new AppResponse();
 
-  public getAllUsers = async (req, res, next) => {
+  public getAllUsers = async (
+    req: Request,
+    res: Response,
+    next: NextFunction
+  ) => {
     try {
       const getAllUsers = await this.userService.getAllUsers();
-      return this.response.successOk(res, "", getAllUsers);
+      return this.response.successOk(res, getAllUsers);
     } catch (error) {
-      return this.response.errorOnServer(res, "Internal Server Error", error);
+      return this.response.errorOnServer(res, error);
     }
   };
 
-  public createUser = async (req, res, next) => {
+  public createUser = async (
+    req: Request,
+    res: Response,
+    next: NextFunction
+  ) => {
     try {
-      const userObject = new User({
-        _id: new mongoose.Types.ObjectId(),
-        name: req.body.name,
-        age: req.body.age,
-      });
-      const createdUser = await this.userService.createNewUser(userObject);
-      return this.response.successOnCreate(
-        res,
-        "New User Created Succesfully",
-        createdUser
-      );
+      const createdUser = await this.userService.createNewUser(req.body);
+      return this.response.successOnCreate(res, createdUser);
     } catch (error) {
-      return this.response.errorOnServer(res, "Internal Server Error", error);
+      return this.response.errorOnServer(res, error);
     }
   };
 
-  public getUserById = async (req, res, next) => {
+  public getUserById = async (
+    req: Request,
+    res: Response,
+    next: NextFunction
+  ) => {
+    const id = req.params.id;
     try {
-      const id = req.params.id;
       const userFound = await this.userService.getUserFoundById(id);
-      return this.response.successOk(res, "User Found", userFound);
+      return this.response.successOk(res, userFound);
     } catch (error) {
-      return this.response.errorOnServer(res, "Internal Server Error", error);
+      if (error instanceof ServiceError) {
+        if (error.code === "ERR_USER_NOT_FOUND") {
+          return this.response.errorUserNotFound(
+            res,
+            error.message,
+            error.code
+          );
+        }
+      }
+      return this.response.errorOnServer(res, error);
     }
   };
 
-  public updateUser = async (req, res, next) => {
+  public updateUser = async (
+    req: Request,
+    res: Response,
+    next: NextFunction
+  ) => {
+    const id = req.params.id;
     try {
-      const id = req.params.id;
       const updateUser = await this.userService.updateUserFields(id, req.body);
-      return this.response.successOk(res, "User Updated", updateUser);
+      return this.response.successOk(res, updateUser);
     } catch (error) {
-      return this.response.errorOnServer(res, "Internal Server Error", error);
+      return this.response.errorOnServer(res, error);
     }
   };
 
-  public deleteUser = async (req, res, next) => {
+  public deleteUser = async (
+    req: Request,
+    res: Response,
+    next: NextFunction
+  ) => {
+    const id = req.params.id;
     try {
-      const id = req.params.id;
       const deleteUser = await this.userService.deleteUserById(id);
-      return this.response.successOk(res, "User Deleted", deleteUser);
+      Logger.info(deleteUser);
+      return this.response.successOk(res, deleteUser);
     } catch (error) {
-      return this.response.errorOnServer(res, "Internal Server Error", error);
+      return this.response.errorOnServer(res, error);
     }
   };
 }

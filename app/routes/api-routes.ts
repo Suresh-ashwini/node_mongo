@@ -7,19 +7,26 @@ export class Routes {
   public userController: UserController = new UserController();
   public routes(app: any): void {
     // User Routes
-    app.get("/api/user", this.userController.getAllUsers);
+    app.get("/api/v1/user", this.userController.getAllUsers);
 
     // Create new User
-    app.post("/api/user", this.userController.createUser);
+    app.post("/api/v1/user", this.userController.createUser);
 
     // Get User By Id
-    app.get("/api/user/:id", this.userController.getUserById);
+    app.get("/api/v1/user/:id", this.userController.getUserById);
 
     // Patch User by Id
-    app.patch("/api/user/:id", this.userController.updateUser);
+    app.patch("/api/v1/user/:id", this.userController.updateUser);
 
     // Delete User By Id
-    app.delete("/api/user/:id", this.userController.deleteUser);
+    app.delete("/api/v1/user/:id", this.userController.deleteUser);
+
+    app.all("*", (req, res, next) => {
+      res.status(404).json({
+        status: "fail",
+        message: `Can't find ${req.originalUrl} on this server!`,
+      });
+    });
   }
 }
 

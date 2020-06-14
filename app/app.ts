@@ -9,23 +9,12 @@ import { Routes } from "./routes/api-routes";
 export default class App {
   public app: express.Application;
   public routes: Routes = new Routes();
-
   public appRoute: express.Router;
-
-  public logger = (req, res, next) => {
-    Logger.info(
-      `${req.protocol}://${req.get("host")}${
-        req.originalUrl
-      }: ${moment().format("LLLL")}`
-    );
-    next();
-  };
 
   constructor() {
     this.createApp();
     this.setupConfig();
     this.mongoSetup();
-    this.initiateMiddleWare();
     this.setUpRoutes();
   }
 
@@ -37,12 +26,8 @@ export default class App {
     this.app.use(bodyParser.json());
   }
 
-  private initiateMiddleWare() {
-    this.app.use(this.logger);
-  }
-
   private setUpRoutes(): void {
-    this.routes.routes(this.app)
+    this.routes.routes(this.app);
   }
 
   private mongoSetup(): void {
@@ -58,7 +43,6 @@ export default class App {
       })
       .then(() => {
         Logger.info("Connected to mogodb");
-        // this.appRoute.use("/api/members", require("./routes/api-routes"));
         this.app.emit("Dbconnected");
       });
   }

@@ -9,40 +9,36 @@ export class AppResponse {
   private CLIENTERROR_CONFLICT = 409;
   private SERVERERROR_INTERNALSERVERERROR = 500;
 
-  public successOk = (res, msg, successdata) => {
+  public successOk = (res, successdata) => {
     res.status(this.SUCCESS_OK).send({
-      body: { message: msg, data: successdata },
+      status: "SUCCESS",
+      data: successdata,
     });
   };
 
-  public successOnCreate = (res, msg, created) => {
+  public successOnCreate = (res, created) => {
     res.status(this.SUCCESS_CREATED).send({
-      body: {
-        message: msg,
-        data: created,
-      },
+      status: "SUCCESS",
+      data: created,
     });
   };
 
-  public successNoContent = (res, msg) => {
+  public successNoContent = (res) => {
     res.status(this.SUCCESS_NOCONTENT).send({
-      body: {
-        message: msg,
-      },
+      status: "SUCCESS",
     });
   };
 
-  public errorOnServer = (res, msg, err) => {
+  public errorOnServer = (res, err) => {
     res.status(this.SERVERERROR_INTERNALSERVERERROR).send({
-      body: {
-        message: msg,
-        error: err,
-      },
+      status: "FAILED",
+      message: err.message,
     });
   };
 
-  public errorNotFound = (res, msg, err) => {
+  public errorUserNotFound = (res, msg, err) => {
     res.status(this.CLIENTERROR_NOTFOUND).send({
+      status: "FAILED",
       body: {
         message: msg,
         error: err,
