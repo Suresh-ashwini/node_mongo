@@ -9,15 +9,19 @@ export class UserRespository {
   public getAllUsers = async () => {
     return User.find();
   };
+
   public createNewUser = async (userObject: object) => {
     return User.create(userObject);
   };
+
   public findUserById = async (id: string) => {
     return User.findById(id);
   };
+
   public deleteUserById = async (id: string) => {
     return User.remove({ _id: id });
   };
+
   public updateUserByPatch = async (id: string, updateUserByPatch) => {
     return User.update({ _id: id }, { $set: updateUserByPatch });
   };

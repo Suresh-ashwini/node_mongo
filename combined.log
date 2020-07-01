@@ -2472,3 +2472,379 @@ info: Connected to 8909
 info: Connected to mogodb
 info: Connected to 8909
 info: Connected to mogodb
+info: Connected to 8909
+info: Connected to mogodb
+info: Connected to 8909
+info: Connected to mogodb
+info: Connected to 8909
+info: Connected to mogodb
+info: Connected to 8909
+info: Connected to mogodb
+info: errrCast to ObjectId failed for value "5ee72001555a4916a7ae6baw" at path "_id" for model "User" {"stringValue":"\"5ee72001555a4916a7ae6baw\"","kind":"ObjectId","value":"5ee72001555a4916a7ae6baw","path":"_id","reason":{},"stack":"CastError: Cast to ObjectId failed for value \"5ee72001555a4916a7ae6baw\" at path \"_id\" for model \"User\"\n    at model.Query.exec (/home/nineleaps/Desktop/Node/node_git/node_mongo/node_modules/mongoose/lib/query.js:4341:21)\n    at model.Query.Query.then (/home/nineleaps/Desktop/Node/node_git/node_mongo/node_modules/mongoose/lib/query.js:4433:15)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)"}
+info: Connected to 8909
+info: Connected to mogodb
+{"level":"info","message":"Connected to 8909"}
+{"message":"Connected to mogodb","level":"info"}
+{"level":"info","message":"Connected to 8909"}
+{"message":"Connected to mogodb","level":"info"}
+{"stringValue":"\"5ee72001555a4916a7ae6baw\"","kind":"ObjectId","value":"5ee72001555a4916a7ae6baw","path":"_id","reason":{},"level":"info","message":"errrCast to ObjectId failed for value \"5ee72001555a4916a7ae6baw\" at path \"_id\" for model \"User\"","stack":"CastError: Cast to ObjectId failed for value \"5ee72001555a4916a7ae6baw\" at path \"_id\" for model \"User\"\n    at model.Query.exec (/home/nineleaps/Desktop/Node/node_git/node_mongo/node_modules/mongoose/lib/query.js:4341:21)\n    at model.Query.Query.then (/home/nineleaps/Desktop/Node/node_git/node_mongo/node_modules/mongoose/lib/query.js:4433:15)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)"}
+{"level":"info","message":"Connected to 8909"}
+{"level":"info","message":"Connected to 8909"}
+{"message":"Connected to mogodb","level":"info"}
+{"level":"info","message":"Connected to 8909"}
+{"message":"Connected to mogodb","level":"info"}
+{"level":"info","message":"Connected to 8909"}
+{"message":"Connected to mogodb","level":"info"}
+{"level":"info","message":"Connected to 8909"}
+{"message":"Connected to mogodb","level":"info"}
+{"level":"info","message":"Connected to 8909"}
+{"level":"info","message":"Connected to 8909"}
+{"level":"info","message":"Connected to 8909"}
+{"message":"Connected to mogodb","level":"info"}
+{"message":{},"level":"info"}
+{"level":"info","message":"Connected to 8909"}
+{"level":"info","message":"Connected to 8909"}
+{"message":"Connected to mogodb","level":"info"}
+{"level":"info","message":"update"}
+{"level":"info","message":"Connected to 8909"}
+{"message":"Connected to mogodb","level":"info"}
+{"level":"info","message":"Connected to 8909"}
+{"message":"Connected to mogodb","level":"info"}
+info: Connected to 8909
+info: Connected to mogodb
+info: update
+info: Connected to 8909
+info: Connected to mogodb
+info: Connected to 8909
+info: Connected to mogodb
+info: Connected to 8909
+info: Connected to mogodb
+info: Connected to 8909
+info: Connected to mogodb
+info: Connected to 8909
+info: Connected to mogodb
+info: Connected to 8909
+info: Connected to mogodb
+info: Connected to 8909
+info: Connected to mogodb
+info: Connected to 8909
+info: Connected to mogodb
+info: Connected to 8909
+info: Connected to mogodb
+info: Connected to 8909
+info: Connected to mogodb
+info: Connected to 8909
+info: Connected to mogodb
+info: Connected to 8909
+info: Connected to mogodb
+info: Connected to 8909
+info: Connected to mogodb
+info: Connected to 8909
+info: Connected to mogodb
+info: Connected to 8909
+info: Connected to mogodb
+info: Connected to 8909
+info: Connected to mogodb
+info: Connected to 8909
+info: Connected to mogodb
+info: Connected to 8909
+info: Connected to mogodb
+info: return in service {"n":0,"nModified":0,"opTime":{"ts":"6838478367851806721","t":7},"electionId":"7fffffff0000000000000007","ok":1,"$clusterTime":{"clusterTime":"6838478367851806721","signature":{"hash":"t457fGSl6Rrvwf8MSm0NDLH2AIc=","keyId":"6831855223338696707"}},"operationTime":"6838478367851806721"}
+info: Connected to 8909
+info: Connected to mogodb
+info: return in service
+info: Connected to 8909
+info: Connected to mogodb
+info: return in service {"n":0,"nModified":0,"opTime":{"ts":"6838478655614615665","t":7},"electionId":"7fffffff0000000000000007","ok":1,"$clusterTime":{"clusterTime":"6838478655614615665","signature":{"hash":"KA3qBIOCs6Th2IQwK85LnjerbS8=","keyId":"6831855223338696707"}},"operationTime":"6838478655614615665"}
+info: return in service {"n":1,"nModified":1,"opTime":{"ts":"6838478831708274689","t":7},"electionId":"7fffffff0000000000000007","ok":1,"$clusterTime":{"clusterTime":"6838478831708274689","signature":{"hash":"D69r85FePW+hVrl9nxRRbAG+0TI=","keyId":"6831855223338696707"}},"operationTime":"6838478831708274689"}
+info: return in service {"n":0,"nModified":0,"opTime":{"ts":"6838478904722718721","t":7},"electionId":"7fffffff0000000000000007","ok":1,"$clusterTime":{"clusterTime":"6838478904722718721","signature":{"hash":"gcHh3JAaXTQ/0f7ms++7MDyqfXI=","keyId":"6831855223338696707"}},"operationTime":"6838478904722718721"}
+info: Connected to 8909
+info: Connected to mogodb
+info: Connected to 8909
+info: Connected to mogodb
+info: Connected to 8909
+info: Connected to mogodb
+info: Connected to 8909
+info: Connected to 8909
+info: Connected to mogodb
+info: hereeee
+info: Connected to 8909
+info: Connected to mogodb
+info: Connected to 8909
+info: Connected to mogodb
+info: delete call in controller
+info: [object Object]
+info: Connected to 8909
+info: Connected to mogodb
+info: Connected to 8909
+info: Connected to mogodb
+info: delete call in controller
+info: [object Object]
+info: Connected to 8909
+info: Connected to mogodb
+info: Connected to 8909
+info: Connected to mogodb
+info: delete call in controller
+info: {"n":0,"opTime":{"ts":"6838576640998506497","t":8},"electionId":"7fffffff0000000000000008","ok":1,"$clusterTime":{"clusterTime":"6838576640998506497","signature":{"hash":"QHYSrW/wg3aBhpRgzJHvpMoA9D8=","keyId":"6831855223338696707"}},"operationTime":"6838576640998506497","deletedCount":0}
+info: Connected to 8909
+info: Connected to mogodb
+info: delete call in controller
+info: {"n":0,"opTime":{"ts":"6838584371939639297","t":8},"electionId":"7fffffff0000000000000008","ok":1,"$clusterTime":{"clusterTime":"6838584371939639297","signature":{"hash":"mhcjdGt0+99KZTo47FI2NyEA0FY=","keyId":"6831855223338696707"}},"operationTime":"6838584371939639297","deletedCount":0}
+info: Connected to 8909
+info: Connected to mogodb
+info: Connected to 8909
+info: Connected to 8909
+info: Connected to mogodb
+info: Connected to 8909
+info: Connected to mogodb
+info: delete call in controller
+info: {"n":0,"opTime":{"ts":"6838584560918200334","t":8},"electionId":"7fffffff0000000000000008","ok":1,"$clusterTime":{"clusterTime":"6838584560918200334","signature":{"hash":"55VDu2SQDtb9hDSG1ZxUFu0fIo4=","keyId":"6831855223338696707"}},"operationTime":"6838584560918200334","deletedCount":0}
+info: Connected to 8909
+info: Connected to mogodb
+info: Connected to 8909
+info: Connected to mogodb
+info: Connected to 8909
+info: Connected to mogodb
+info: Connected to 8909
+info: Connected to mogodb
+info: Connected to 8909
+info: Connected to 8909
+info: Connected to mogodb
+info: delete call in controller
+info: {"n":0,"opTime":{"ts":"6838585016184733697","t":8},"electionId":"7fffffff0000000000000008","ok":1,"$clusterTime":{"clusterTime":"6838585016184733697","signature":{"hash":"VfkBpJ+ND/C5q4n60mT3GbChzN8=","keyId":"6831855223338696707"}},"operationTime":"6838585016184733697","deletedCount":0}
+info: Connected to 8909
+info: Connected to mogodb
+info: Connected to 8909
+info: Connected to mogodb
+info: 5ee3b7064c08c914894cb281
+info: delete call in controller
+info: {"n":0,"opTime":{"ts":"6838585145033752577","t":8},"electionId":"7fffffff0000000000000008","ok":1,"$clusterTime":{"clusterTime":"6838585145033752577","signature":{"hash":"xfH28MOX569B7E96rvCjKzkDnoU=","keyId":"6831855223338696707"}},"operationTime":"6838585145033752577","deletedCount":0}
+info: Connected to 8909
+info: Connected to mogodb
+info: 5ee3b7064c08c914894cb281
+info: delete call in controller
+info: {"n":0,"opTime":{"ts":"6838585273882771457","t":8},"electionId":"7fffffff0000000000000008","ok":1,"$clusterTime":{"clusterTime":"6838585273882771457","signature":{"hash":"wyiW6X2ndHQ23sjjVQ6J1Xf4f/4=","keyId":"6831855223338696707"}},"operationTime":"6838585273882771457","deletedCount":0}
+info: Connected to 8909
+info: Connected to mogodb
+info: 5ee3b7064c08c914894cb281
+info: delete call in controller
+info: {"n":0,"opTime":{"ts":"6838585286767673345","t":8},"electionId":"7fffffff0000000000000008","ok":1,"$clusterTime":{"clusterTime":"6838585286767673345","signature":{"hash":"JRcgGfNhFXK4DH4A5MY89JWY1fg=","keyId":"6831855223338696707"}},"operationTime":"6838585286767673345","deletedCount":0}
+info: Connected to 8909
+info: Connected to mogodb
+info: 5ee3b7064c08c914894cb281
+info: delete call in controller
+info: Connected to 8909
+info: Connected to mogodb
+info: 5ee3b7064c08c914894cb281
+info: delete call in controller
+info: Connected to 8909
+info: Connected to mogodb
+info: 5ee3b7064c08c914894cb281
+info: delete call in controller
+info: Connected to 8909
+info: Connected to mogodb
+info: Connected to 8909
+info: Connected to mogodb
+info: 5ee3b7064c08c914894cb281
+info: 5ee3b7064c08c914894cb281
+info: Connected to 8909
+info: Connected to 8909
+info: Connected to 8909
+info: Connected to mogodb
+info: Connected to 8909
+info: Connected to 8909
+info: Connected to mogodb
+info: Connected to 8909
+info: Connected to mogodb
+info: 5ee3b7064c08c914894cb281
+info: 5ee3b7064c08c914894cb284
+info: 5ee3b7064c08c914894c
+info: Connected to 8909
+info: Connected to mogodb
+info: Connected to 8909
+info: Connected to mogodb
+info: Connected to 8909
+info: Connected to mogodb
+info: Connected to 8909
+info: Connected to mogodb
+info: Connected to 8909
+info: Connected to mogodb
+info: Connected to 8909
+info: Connected to mogodb
+info: 5ee3b7064c08c914894c
+info: 5ee39228ad6d176a212041bd
+info: Connected to 8909
+info: Connected to mogodb
+info: Connected to 8909
+info: Connected to mogodb
+info: Connected to 8909
+info: Connected to mogodb
+info: 5ee39228ad6d176a212041bd
+info: Connected to 8909
+info: Connected to mogodb
+info: Connected to 8909
+info: Connected to mogodb
+info: Connected to 8909
+info: Connected to mogodb
+info: Connected to 8909
+info: Connected to mogodb
+info: Connected to 8909
+info: Connected to mogodb
+info: Connected to 8909
+info: Connected to mogodb
+info: Connected to 8909
+info: Connected to mogodb
+info: Connected to 8909
+info: Connected to mogodb
+info: Connected to 8909
+info: Connected to mogodb
+info: Connected to 8909
+info: Connected to mogodb
+info: Connected to 8909
+info: Connected to mogodb
+info: Connected to 8909
+info: Connected to mogodb
+info: Connected to 8909
+info: Connected to 8909
+info: Connected to mogodb
+info: Connected to 8909
+info: Connected to mogodb
+info: Connected to 8909
+info: Connected to 8909
+info: Connected to 8909
+info: Connected to mogodb
+info: Connected to 8909
+info: Connected to mogodb
+info: Connected to 8909
+info: Connected to mogodb
+info: Connected to 8909
+info: Connected to mogodb
+info: Connected to 8909
+info: Connected to mogodb
+info: Connected to 8909
+info: Connected to mogodb
+info: Connected to 8909
+info: Connected to mogodb
+info: Connected to 8909
+info: Connected to mogodb
+info: Connected to 8909
+info: Connected to mogodb
+info: Connected to 8909
+info: Connected to mogodb
+info: Connected to 8909
+info: Connected to 8909
+info: Connected to mogodb
+info: Connected to 8909
+info: Connected to mogodb
+info: Connected to 8909
+info: Connected to mogodb
+info: Connected to 8909
+info: Connected to mogodb
+info: Connected to 8909
+info: Connected to mogodb
+info: Connected to 8909
+info: Connected to mogodb
+info: Connected to 8909
+info: Connected to mogodb
+info: Connected to 8909
+info: Connected to mogodb
+info: undefined
+info: undefined
+info: Connected to 8909
+info: Connected to mogodb
+info: undefined
+info: Connected to 8909
+info: Connected to mogodb
+info: Connected to 8909
+info: Connected to mogodb
+info: Connected to 8909
+info: Connected to mogodb
+info: Connected to 8909
+info: Connected to mogodb
+info: Connected to 8909
+info: Connected to mogodb
+info: Connected to 8909
+info: Connected to mogodb
+info: Connected to 8909
+info: Connected to 8909
+info: Connected to mogodb
+info: Connected to 8909
+info: Connected to 8909
+info: Connected to mogodb
+info: Connected to 8909
+info: Connected to mogodb
+info: Connected to 8909
+info: Connected to mogodb
+info: Connected to 8909
+info: Connected to 8909
+info: Connected to 8909
+info: Connected to mogodb
+info: Connected to 8909
+info: Connected to mogodb
+info: Connected to 8909
+info: Connected to mogodb
+info: Connected to 8909
+info: Connected to mogodb
+info: Connected to 8909
+info: Connected to mogodb
+info: Connected to 8909
+info: Connected to mogodb
+info: Connected to 8909
+info: Connected to mogodb
+info: Connected to 8909
+info: Connected to mogodb
+info: Connected to 8909
+info: Connected to 8909
+info: Connected to mogodb
+info: Connected to 8909
+info: Connected to mogodb
+info: Connected to 8909
+info: Connected to mogodb
+info: Connected to 8909
+info: Connected to 8909
+info: Connected to mogodb
+info: Connected to 8909
+info: Connected to mogodb
+info: Connected to 8909
+info: Connected to mogodb
+info: Connected to 8909
+info: Connected to mogodb
+info: Connected to 8909
+info: Connected to 8909
+info: Connected to mogodb
+info: Connected to 8909
+info: Connected to mogodb
+info: Connected to 8909
+info: Connected to mogodb
+info: Connected to 8909
+info: Connected to 8909
+info: Connected to mogodb
+info: Connected to 8909
+info: Connected to mogodb
+info: Connected to 8909
+info: Connected to mogodb
+info: Connected to 8909
+info: Connected to mogodb
+info: Connected to 8909
+info: Connected to mogodb
+info: Connected to 8909
+info: Connected to mogodb
+info: Connected to 8909
+info: Connected to mogodb
+info: Connected to 8909
+info: Connected to mogodb
+info: Connected to 8909
+info: Connected to 8909
+info: Connected to mogodb
+info: Connected to 8909
+info: Connected to 8909
+info: Connected to mogodb
+info: Connected to 8909
+info: Connected to mogodb
+info: Connected to 8909
+info: Connected to 8909
+info: Connected to mogodb
+info: Connected to 8909
+info: Connected to mogodb
+info: Connected to 8909
+info: Connected to mogodb

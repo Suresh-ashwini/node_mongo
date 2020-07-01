@@ -3,10 +3,12 @@ import { AppResponse } from "../services/app-responses";
 import Logger from "../config/logger";
 import ServiceError from "../errors/ServiceError";
 import { Request, NextFunction } from "express";
-import RepositoryError from "../errors/RepositoryError";
 
 export class UserController {
+
+
   public userService: UserService = new UserService();
+
   public response: AppResponse = new AppResponse();
 
   public getAllUsers = async (
@@ -68,6 +70,15 @@ export class UserController {
       const updateUser = await this.userService.updateUserFields(id, req.body);
       return this.response.successOk(res, updateUser);
     } catch (error) {
+      if (error instanceof ServiceError) {
+        if (error.code === "ERR_USER_NOT_FOUND") {
+          return this.response.errorUserNotFound(
+            res,
+            error.message,
+            error.code
+          );
+        }
+      }
       return this.response.errorOnServer(res, error);
     }
   };
@@ -80,9 +91,17 @@ export class UserController {
     const id = req.params.id;
     try {
       const deleteUser = await this.userService.deleteUserById(id);
-      Logger.info(deleteUser);
       return this.response.successOk(res, deleteUser);
     } catch (error) {
+      if (error instanceof ServiceError) {
+        if (error.code === "ERR_USER_NOT_FOUND") {
+          return this.response.errorUserNotFound(
+            res,
+            error.message,
+            error.code
+          );
+        }
+      }
       return this.response.errorOnServer(res, error);
     }
   };

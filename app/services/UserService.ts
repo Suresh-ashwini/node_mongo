@@ -21,15 +21,24 @@ export class UserService {
     return user;
   };
 
-  public deleteUserById = async (id: string) => {
-    return await this.userRepository.deleteUserById(id);
+  public updateUserFields = async (id: string, fields) => {
+    const user = await this.userRepository.findUserById(id);
+    if (!user) {
+      throw new ServiceError("User Not Found", "ERR_USER_NOT_FOUND");
+    } else {
+      const updateOperations = {};
+      for (const ops of fields) {
+        updateOperations[ops.propName] = ops.value;
+      }
+      return await this.userRepository.updateUserByPatch(id, updateOperations);
+    }
   };
 
-  public updateUserFields = async (id: string, fields) => {
-    const updateOperations = {};
-    for (const ops of fields) {
-      updateOperations[ops.propName] = ops.value;
+  public deleteUserById = async (id: string) => {
+    const user = await this.userRepository.findUserById(id);
+    if (!user) {
+      throw new ServiceError("User Not Found", "ERR_USER_NOT_FOUND");
     }
-    return await this.userRepository.updateUserByPatch(id, updateOperations);
+    return await this.userRepository.deleteUserById(id);
   };
 }
