@@ -6,6 +6,8 @@ node_modules/
 /tmp
 /out-tsc
 
+#console file
+**/*combined.log
 
 # profiling files
 chrome-profiler-events.json

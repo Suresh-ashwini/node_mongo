@@ -11,8 +11,7 @@ const Logger = createLogger({
   level: "silly",
   format: format.combine(
     ignorePrivate(),
-    format.timestamp(),
-    format.prettyPrint()
+    format.simple(),
   ),
   transports: [
     new transports.File({ filename: "combined.log" }),
